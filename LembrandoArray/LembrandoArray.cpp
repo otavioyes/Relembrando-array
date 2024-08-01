@@ -32,15 +32,15 @@ int main()
 	{100, 200, 300}
 	};
 
-	std::cout << "Valores e endereços de memória dos elementos da matrix " << '\n';
+	std::cout << "Valores e endereços de memória dos elementos da matrix " << &matrix[3][3] << '\n';
 
 	for (auto i = 0; i < 3; i++) {
-		for (auto j = 0; i < 3; i++) {
+		for (auto j = 0; j < 3; j++) {
 			std::cout << "Valor: " << matrix[i][j] << " Endereço de memória " << &matrix[i][j] << '\n';
 
 		}
 	}
-	std::cout << "Endereço de memória da matrix " << matrix << '\n';
+	std::cout << "Endereço de memória da matrix " << &matrix[3][3] << '\n';
 
 	return 0;
 }
